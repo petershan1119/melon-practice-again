@@ -126,6 +126,7 @@ class Artist(models.Model):
         blank=True,
     )
 
+    objects = ArtistManager()
 
     def __str__(self):
         return self.name
